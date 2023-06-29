@@ -1,10 +1,26 @@
 .card-list {
-  margin: 100px auto 50px;
-  padding: 0;
+  margin: 100px auto;
+  max-width: 980px;
   list-style-type: none;
   display: grid;
   column-gap: 17px;
   row-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 60%;
+}
+
+@media screen and (max-width: 940px) {
+  .card-list {
+    padding-top: 100px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card-list {
+    padding-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }

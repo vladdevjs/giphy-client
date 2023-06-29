@@ -9,3 +9,10 @@
   border-radius: 5px;
   margin-right: 40px;
 }
+
+@media screen and (max-width: 767px) {
+  .search__field {
+    width: 90%;
+    margin-left: 10px;
+  }
+}

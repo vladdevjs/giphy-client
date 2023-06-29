@@ -11,3 +11,9 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 767px) {
+  .card_large {
+    width: calc(100vw - 10%);
+  }
+}
