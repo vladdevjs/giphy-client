@@ -19,6 +19,7 @@
 
 @media screen and (max-width: 650px) {
   .card-list {
+    max-width: 95%;
     padding-top: 50px;
     grid-template-columns: 1fr;
     gap: 20px;
