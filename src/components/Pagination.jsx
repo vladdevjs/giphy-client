@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 function Pagination({ currentPage, totalPages, goToPage }) {
   const renderPaginationButtons = () => {
     const visiblePageCount = 7;
@@ -16,6 +18,10 @@ function Pagination({ currentPage, totalPages, goToPage }) {
     }
     return buttons;
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentPage]);
 
   return (
     <ul className='pagination'>
