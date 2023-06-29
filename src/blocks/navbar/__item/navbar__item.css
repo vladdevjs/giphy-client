@@ -10,7 +10,7 @@
 
 .navbar__item:hover {
   color: black;
-  background-color: yellowgreen;
+  background-color: #9acd32;
 }
 
 @media screen and (max-width: 767px) {
