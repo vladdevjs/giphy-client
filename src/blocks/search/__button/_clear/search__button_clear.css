@@ -1,0 +1,14 @@
+.search__button_clear {
+  background-image: url('../../../../images/clear.svg');
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+.search__button_clear:hover {
+  background-image: url('../../../../images/clear-active.svg');
+  background-position: center;
+  background-size: 35px;
+  background-repeat: no-repeat;
+}

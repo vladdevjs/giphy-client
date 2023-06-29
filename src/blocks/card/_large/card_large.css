@@ -1,0 +1,13 @@
+.card_large {
+  margin: 80px auto;
+  background: #cccccc;
+  color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 500px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

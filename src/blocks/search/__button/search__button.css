@@ -1,0 +1,16 @@
+.search__button {
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  display: inline-block;
+  background-color: #282c34;
+  color: yellowgreen;
+  border: 1px yellowgreen solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search__button:hover {
+  background-color: yellowgreen;
+  color: black;
+}

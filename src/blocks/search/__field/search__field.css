@@ -1,0 +1,11 @@
+.search__field {
+  width: 50%;
+  height: 50px;
+  background-color: #282c34;
+  border: 2px yellowgreen solid;
+  outline: none;
+  font-size: 30px;
+  color: yellowgreen;
+  border-radius: 5px;
+  margin-right: 40px;
+}

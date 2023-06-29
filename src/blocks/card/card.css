@@ -1,0 +1,13 @@
+.card {
+  margin: 0 auto;
+  background: #cccccc;
+  color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 282px;
+  height: 282px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+import React, { useState } from 'react';
+import { ClipLoader } from 'react-spinners';
+
+function Card({ card }) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const onLoading = () => {
+    setIsLoading(false);
+  };
+
+  return (
+    <div className='card'>
+      {isLoading ? (
+        <span className='card__spinner'>
+          <ClipLoader color='#9acd32' size={30} />
+        </span>
+      ) : null}
+      <img src={card.images.original.url} alt='Card' className={`card__image ${isLoading ? 'card__image_hidden' : ''}`} onLoad={onLoading} />
+    </div>
+  );
+}
+
+export default Card;

@@ -1,0 +1,14 @@
+.search__button_search {
+  background-image: url('../../../../images/search.svg');
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+.search__button_search:hover {
+  background-image: url('../../../../images/search-active.svg');
+  background-position: center;
+  background-size: 35px;
+  background-repeat: no-repeat;
+}

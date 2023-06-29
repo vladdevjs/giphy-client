@@ -1,0 +1,14 @@
+.navbar__item {
+  margin-right: 2rem;
+  padding: 3px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: yellowgreen;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.navbar__item:hover {
+  color: black;
+  background-color: yellowgreen;
+}

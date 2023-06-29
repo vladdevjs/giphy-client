@@ -1,0 +1,4 @@
+.pagination__item_active {
+  color: black;
+  background-color: yellowgreen;
+}

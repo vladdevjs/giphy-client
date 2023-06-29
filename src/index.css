@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+@import url(./blocks/page/page.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/navbar/navbar.css);
+@import url(./blocks/navbar/__item/navbar__item.css);
+@import url(./blocks/card-list/card-list.css);
+@import url(./blocks/card/card.css);
+@import url(./blocks/card/__image/card__image.css);
+@import url(./blocks/card/__image/_hidden/card__image_hidden.css);
+@import url(./blocks/card/_large/card_large.css);
+@import url(./blocks/single-card/single-card.css);
+@import url(./blocks/card/__largeImage/card__largeImage.css);
+@import url(./blocks/card/__largeImage/_hidden/card__largeImage_hidden.css);
+@import url(./blocks/pagination/pagination.css);
+@import url(./blocks/pagination/__item/pagination__item.css);
+@import url(./blocks/pagination/__item/_active/pagination__item_active.css);
+@import url(./blocks/search/search.css);
+@import url(./blocks/search/__field/search__field.css);
+@import url(./blocks/search/__button/search__button.css);
+@import url(./blocks/search/__form/search__form.css);
+@import url(./blocks/search/__message/search__message.css);
+@import url(./blocks/search/__button/_clear/search__button_clear.css);
+@import url(./blocks/search/__button/_search/search__button_search.css);
