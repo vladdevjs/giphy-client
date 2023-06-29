@@ -8,6 +8,10 @@
   border-radius: 5px;
 }
 
+.navbar__item:last-child {
+  margin-right: 0;
+}
+
 .navbar__item:hover {
   color: black;
   background-color: #9acd32;
