@@ -16,6 +16,7 @@
 @import url(./blocks/pagination/pagination.css);
 @import url(./blocks/pagination/__item/pagination__item.css);
 @import url(./blocks/pagination/__item/_active/pagination__item_active.css);
+@import url(./blocks/pagination/__item/_disabled/pagination__item_disabled.css);
 @import url(./blocks/search/search.css);
 @import url(./blocks/search/__field/search__field.css);
 @import url(./blocks/search/__button/search__button.css);

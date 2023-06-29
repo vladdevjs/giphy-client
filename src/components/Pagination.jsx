@@ -19,14 +19,14 @@ function Pagination({ currentPage, totalPages, goToPage }) {
 
   return (
     <ul className='pagination'>
-      <li style={{ visibility: currentPage > 1 ? 'visible' : 'hidden' }}>
-        <button className='pagination__item' onClick={() => goToPage(currentPage - 1)}>
+      <li>
+        <button className={`pagination__item ${currentPage <= 1 ? 'pagination__item_disabled' : ''}`} disabled={currentPage <= 1} onClick={() => goToPage(currentPage - 1)}>
           Назад
         </button>
       </li>
       {renderPaginationButtons()}
-      <li style={{ visibility: currentPage !== totalPages ? 'visible' : 'hidden' }}>
-        <button className='pagination__item' onClick={() => goToPage(currentPage + 1)}>
+      <li>
+        <button className={`pagination__item ${currentPage === totalPages ? 'pagination__item_disabled' : ''}`} disabled={currentPage !== totalPages} onClick={() => goToPage(currentPage + 1)}>
           Вперед
         </button>
       </li>

@@ -1,0 +1,11 @@
+.pagination__item_disabled {
+  color: gray;
+  cursor: default;
+}
+
+.pagination__item_disabled:hover,
+.pagination__item_disabled:active {
+  color: gray;
+  background-color: transparent;
+  cursor: default;
+}
