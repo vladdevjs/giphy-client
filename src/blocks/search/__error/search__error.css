@@ -1,0 +1,7 @@
+.search__error {
+  color: yellowgreen;
+  display: block;
+  max-width: 90%;
+  margin: 20px auto 0;
+  font-size: 16px;
+}

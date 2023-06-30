@@ -24,3 +24,4 @@
 @import url(./blocks/search/__message/search__message.css);
 @import url(./blocks/search/__button/_clear/search__button_clear.css);
 @import url(./blocks/search/__button/_search/search__button_search.css);
+@import url(./blocks/search/__error/search__error.css);

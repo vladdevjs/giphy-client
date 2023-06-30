@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import api from '../utils/api';
 import CardList from './CardList';
 import SearchField from './SearchField';
@@ -10,12 +10,20 @@ function Main() {
   const [noResults, setNoResults] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const searchInputRef = useRef(null);
+  const [searchError, setSearchError] = useState('');
 
   const handleSearch = (event) => {
     event.preventDefault();
     if (searchQuery) {
       setCurrentPage(1);
-      fetchSearchGifs(currentPage);
+      if (searchInputRef.current.validity.valid) {
+        fetchSearchGifs(currentPage);
+      } else {
+        const error = searchInputRef.current.validationMessage;
+        console.log(error);
+        setSearchError(error);
+      }
     }
   };
 
@@ -37,10 +45,12 @@ function Main() {
 
   const handleClear = () => {
     setSearchQuery('');
+    setSearchError('');
   };
 
   const handleChange = (event) => {
     setSearchQuery(event.target.value);
+    setSearchError('');
   };
 
   const goToPage = (page) => {
@@ -52,7 +62,14 @@ function Main() {
 
   return (
     <>
-      <SearchField handleSearch={handleSearch} handleClear={handleClear} handleChange={handleChange} searchQuery={searchQuery} />
+      <SearchField
+        handleSearch={handleSearch}
+        handleClear={handleClear}
+        handleChange={handleChange}
+        searchQuery={searchQuery}
+        searchInputRef={searchInputRef}
+        error={searchError}
+      />
       {noResults ? (
         <p className='search__message'>Ничего не найдено. Не отчаиваемся 😉</p>
       ) : (
