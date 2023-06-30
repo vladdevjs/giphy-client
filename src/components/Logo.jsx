@@ -2,19 +2,36 @@ import React from 'react';
 
 function Logo() {
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' fillRule='evenodd' strokeLinejoin='round' strokeMiterlimit='2' clipRule='evenodd' viewBox='0 0 1941 795'>
-      <path
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fillRule='evenodd'
+      strokeLinejoin='round'
+      strokeMiterlimit='2'
+      clipRule='evenodd'
+      viewBox='0 0 1538 425'
+    >
+      <text
+        x='1243.96'
+        y='1169.34'
         fill='#9ACD32'
-        d='M206.833 100h386.334c37.133 0 50.633 3.867 64.2 11.133 13.566 7.267 24.233 17.934 31.5 31.5C696.133 156.2 700 169.667 700 206.833v250.334l-146.367-135.1a50.011 50.011 0 00-33.906-13.253 50.042 50.042 0 00-41.594 22.253L373.8 487.567l-76.767-49.334c-21.074-13.539-49.235-9.258-65.333 9.934L100.167 605c-.11-3.944-.165-7.888-.167-11.833V206.833c0-37.166 3.867-50.633 11.133-64.2 7.267-13.566 17.934-24.233 31.5-31.5C156.2 103.867 169.667 100 206.833 100zm315.9 284.333L700 547.9v45.233c0 37.134-3.867 50.634-11.133 64.2a75.739 75.739 0 01-31.5 31.5c-13.567 7.267-27.034 11.134-64.2 11.134H206.833c-37.166 0-50.633-3.867-64.2-11.134a76.805 76.805 0 01-16.166-11.5l146.866-175.1 78.2 50.267c22.81 14.656 53.597 8.226 68.634-14.333L522.733 384.3v.033zM266.267 200c-37 0-66.267 27.733-66.267 66.267 0 38.566 29.3 67.066 66.267 67.066 37.766 0 67.066-28.5 67.066-67.066 0-38.534-29.3-66.267-67.066-66.267z'
-        transform='translate(353.002 367.421) scale(.61363) translate(-400 -400)'
-      ></path>
-      <text x='1243.96' y='1169.34' fill='#9ACD32' fontFamily="'FranklinGothic-Book', 'Franklin Gothic Book', sans-serif" fontSize='471.167' transform='matrix(.80134 0 0 .80176 -246.704 -445.666)'>
-        Г
-        <tspan x='1400.17px 1650.94px' y='1169.34px 1169.34px'>
-          иф
-        </tspan>
-        ки
+        fontFamily="'EpilepsySans', 'Epilepsy Sans'"
+        fontSize='471.167'
+        fontWeight='500'
+        transform='matrix(.80134 0 0 .80176 -417.629 -614.009)'
+      >
+        ГИФКИ
       </text>
+      <g transform='matrix(.88283 0 0 .94678 226.005 212.079) translate(-256 -224)'>
+        <g transform='translate(0 -604.362)'>
+          <path
+            fill='#9ACD32'
+            fillRule='nonzero'
+            d='M0 0v448h512V0H0zm32 32h448v376l-80-88-45.715 50.285L208 224 32 400V32zm96 288h96v96h-96v-96z'
+            transform='translate(0 604.362)'
+          ></path>
+          <path fill='#9ACD32' d='M288 668.362H384V764.362H288z'></path>
+        </g>
+      </g>
     </svg>
   );
 }
