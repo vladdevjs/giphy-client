@@ -13,7 +13,7 @@ input::placeholder {
   font-size: 30px;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 767px) {
   .search__field {
     width: 90%;
     margin-left: 10px;
