@@ -1,4 +1,11 @@
 .pagination__item_active {
   color: black;
   background-color: yellowgreen;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .pagination__item_active {
+    font-size: 24px;
+  }
 }
