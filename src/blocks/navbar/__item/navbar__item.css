@@ -1,11 +1,15 @@
 .navbar__item {
-  margin-right: 2rem;
+  margin-right: 2.5rem;
   padding: 3px;
-  font-size: 2rem;
+  font-size: 2.1rem;
   text-decoration: none;
   color: yellowgreen;
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
+  font-family: 'Epilepsy Sans';
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.08em;
 }
 
 .navbar__item:last-child {

@@ -18,3 +18,10 @@
   font-style: normal;
   font-weight: 900;
 }
+
+@font-face {
+  src: url(./EpilepsySans.ttf) format('truetype');
+  font-family: 'Epilepsy Sans';
+  font-style: normal;
+  font-weight: 500;
+}
