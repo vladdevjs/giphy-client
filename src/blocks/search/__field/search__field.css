@@ -6,7 +6,6 @@
   outline: none;
   font-size: 30px;
   color: yellowgreen;
-  border-radius: 5px;
   padding: 0 140px 0 20px;
 }
 
@@ -14,7 +13,7 @@ input::placeholder {
   font-size: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 930px) {
   .search__field {
     width: 90%;
     margin-left: 10px;
