@@ -4,6 +4,8 @@
   background-size: 30px;
   background-repeat: no-repeat;
   transition: all 0.3s ease-in-out;
+  position: absolute;
+  right: 10px;
 }
 
 .search__button_search:hover {

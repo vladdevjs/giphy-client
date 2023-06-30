@@ -1,5 +1,15 @@
 .search__form {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
+  height: 70px;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .search__form {
+    width: 90%;
+    margin-left: 10px;
+  }
 }
