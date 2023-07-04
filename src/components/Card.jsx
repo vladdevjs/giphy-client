@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ClipLoader } from 'react-spinners';
 
-function Card({ card }) {
+function Card({ card, openPopup }) {
   const [isLoading, setIsLoading] = useState(true);
 
   const onLoading = () => {
@@ -15,7 +15,13 @@ function Card({ card }) {
           <ClipLoader color='#9acd32' size={30} />
         </span>
       ) : null}
-      <img src={card.images.original.url} alt='Card' className={`card__image ${isLoading ? 'card__image_hidden' : ''}`} onLoad={onLoading} />
+      <img
+        src={card.images.original.url}
+        alt='Card'
+        className={`card__image ${isLoading ? 'card__image_hidden' : ''}`}
+        onLoad={onLoading}
+        onClick={() => openPopup(card)}
+      />
     </div>
   );
 }

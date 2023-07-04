@@ -6,8 +6,8 @@
   object-position: center;
   cursor: pointer;
 
-  filter: brightness(50%);
-  opacity: 0.5;
+  filter: brightness(70%);
+  opacity: 0.8;
   transition: filter 0.3s, opacity 0.3s ease-in-out;
 }
 

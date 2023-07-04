@@ -2,14 +2,15 @@ import React, { useEffect, useState } from 'react';
 import api from '../utils/api';
 import CardList from './CardList';
 import Pagination from './Pagination';
+import { mergeFavoritesIntoCards } from '../helpers/mergeFavoritesIntoCards';
 
-function Trending() {
-  const [cards, setCards] = useState([]);
+function Trending({ setCards, cards, openPopup }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   useEffect(() => {
     fetchTrendingGifs(currentPage);
-  }, [currentPage]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentPage, localStorage.getItem('favorites')]);
 
   const fetchTrendingGifs = (page) => {
     const limit = 9;
@@ -18,7 +19,9 @@ function Trending() {
     api
       .getTrending(limit, offset)
       .then((data) => {
-        setCards(data.data);
+        const trendingCardsData = data.data;
+        const updatedCards = mergeFavoritesIntoCards(trendingCardsData);
+        setCards(updatedCards);
         const totalCount = data.pagination.total_count;
         setTotalPages(Math.ceil(totalCount / limit));
       })
@@ -36,7 +39,7 @@ function Trending() {
   return (
     <>
       <div>
-        <CardList cards={cards} />
+        <CardList cards={cards} openPopup={openPopup} />
         {totalPages > 1 && <Pagination currentPage={currentPage} totalPages={totalPages} goToPage={goToPage} />}
       </div>
     </>

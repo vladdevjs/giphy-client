@@ -1,17 +1,29 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import api from '../utils/api';
 import CardList from './CardList';
 import SearchField from './SearchField';
 import Pagination from './Pagination';
+import { mergeFavoritesIntoCards } from '../helpers/mergeFavoritesIntoCards';
 
-function Main() {
-  const [cards, setCards] = useState([]);
+function Main({ setCards, cards, openPopup }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [noResults, setNoResults] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const searchInputRef = useRef(null);
   const [searchError, setSearchError] = useState('');
+  // eslint-disable-next-line no-unused-vars
+  const [isInitialRender, setIsInitialRender] = useState(true);
+
+  useEffect(() => {
+    if (!isInitialRender && cards.length > 0) {
+      const updatedCards = mergeFavoritesIntoCards(cards);
+      setCards(updatedCards);
+    } else {
+      setIsInitialRender(false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [localStorage.getItem('favorites'), isInitialRender]);
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -74,7 +86,7 @@ function Main() {
         <p className='search__message'>Ничего не найдено. Не отчаиваемся 😉</p>
       ) : (
         <>
-          <CardList cards={cards} />
+          <CardList cards={cards} openPopup={openPopup} />
           {totalPages > 1 && <Pagination currentPage={currentPage} totalPages={totalPages} goToPage={goToPage} />}
         </>
       )}

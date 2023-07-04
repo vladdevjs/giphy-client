@@ -1,0 +1,5 @@
+.popup__link-container {
+  display: block;
+  overflow: hidden;
+  flex-grow: 1;
+}

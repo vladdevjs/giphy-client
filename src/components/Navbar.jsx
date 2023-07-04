@@ -12,6 +12,9 @@ function Navbar({ onRandomClick }) {
       <Link to='/random' className='navbar__item' onClick={onRandomClick}>
         Мне повезет
       </Link>
+      <Link to='/favourites' className='navbar__item'>
+        Избранное
+      </Link>
     </nav>
   );
 }
