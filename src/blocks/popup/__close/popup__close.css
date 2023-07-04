@@ -1,6 +1,6 @@
 .popup__close {
   padding: 0;
-  background: url("./../../../images/close.svg") no-repeat center;
+  background: url('./../../../images/close.svg') no-repeat center;
   background-size: contain;
   border: none;
   height: 32px;
@@ -22,5 +22,14 @@
     width: 20px;
     right: 0;
     top: -36px;
+  }
+}
+
+@media screen and (max-height: 499px) {
+  .popup__close {
+    height: 20px;
+    width: 20px;
+    right: -25px;
+    top: 0px;
   }
 }

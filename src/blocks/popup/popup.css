@@ -96,3 +96,21 @@
     font-size: 16px;
   }
 }
+
+@media screen and (max-height: 499px) {
+  .popup__container {
+    max-height: 80%;
+  }
+  .popup__image {
+    width: 200px;
+    height: 200px;
+  }
+  .popup__image-title {
+    font-size: 18px;
+    max-width: 80%;
+  }
+  .popup__favourite-button,
+  .popup__copy-button {
+    font-size: 16px;
+  }
+}
