@@ -84,16 +84,16 @@
 
 @media screen and (max-width: 499px) {
   .popup__image {
-    width: 250px;
-    height: 250px;
+    width: 320px;
+    height: 320px;
   }
   .popup__image-title {
-    font-size: 16px;
-    max-width: 250px;
+    font-size: 18px;
+    max-width: 320px;
   }
 
   .popup__favourite-button,
   .popup__copy-button {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
