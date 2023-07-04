@@ -106,8 +106,7 @@
     height: 200px;
   }
   .popup__image-title {
-    font-size: 18px;
-    max-width: 80%;
+    display: none;
   }
   .popup__favourite-button,
   .popup__copy-button {
