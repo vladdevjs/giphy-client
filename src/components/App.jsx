@@ -7,12 +7,17 @@ import Trending from './Trending';
 import Random from './Random';
 import Popup from './Popup';
 import Favourites from './Favourites';
+import Toggler from './Toggler';
+import SettingsContext from '../contexts/SettingsContext';
 
 function App() {
+  const lightThemeInitial = localStorage.getItem('theme') ? localStorage.getItem('theme') === 'true' : false;
+
   const [cards, setCards] = useState([]);
   const [card, setCard] = useState(null);
   const [randomTrigger, setRandomTrigger] = useState(0);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [lightTheme, setLightTheme] = useState(lightThemeInitial);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -35,9 +40,18 @@ function App() {
   };
 
   return (
-    <div className='page'>
-      <Header />
+    <div className={`page${lightTheme ? ' light-theme' : ''}`}>
+      <Header lightTheme={lightTheme} />
       <Navbar onRandomClick={handleRandomRefresh} />
+      <SettingsContext.Provider
+        value={{
+          lightTheme,
+          setLightTheme,
+        }}
+      >
+        <Toggler />
+      </SettingsContext.Provider>
+
       <Popup isOpen={isPopupOpen} card={card} onClose={closePopup} setCard={setCard} />
       <Routes>
         <Route path='/' element={<Main setCards={setCards} cards={cards} openPopup={openPopup} />} />

@@ -21,10 +21,16 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-  background-color: #282c34;
+  background-color: var(--background-color);
+
   overflow-y: scroll;
 }
 
 .page {
   text-align: center;
+  background-color: var(--background-color);
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  transition: background-color 0.5s ease-in-out;
 }

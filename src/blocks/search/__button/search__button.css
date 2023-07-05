@@ -3,13 +3,13 @@
   height: 55px;
   margin-right: 10px;
   display: inline-block;
-  background-color: #282c34;
-  color: yellowgreen;
+  background-color: var(--background-color);
+  color: var(--text-color);
   border: none;
   cursor: pointer;
 }
 
 .search__button:hover {
-  background-color: yellowgreen;
+  background-color: var(--text-color);
   color: black;
 }

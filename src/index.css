@@ -1,5 +1,7 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/fonts.css);
+
+@import url(./blocks/variables.css);
 @import url(./blocks/page/page.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__logo/header__logo.css);
@@ -33,3 +35,5 @@
 @import url(./blocks/popup/__question/popup__question.css);
 @import url(./blocks/popup/__image-container/popup__image-container.css);
 @import url(./blocks/popup/__link-container/popup__link-container.css);
+
+@import url(./blocks/toggler/toggler.css);

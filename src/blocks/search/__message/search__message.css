@@ -1,5 +1,5 @@
 .search__message {
   margin-top: 100px;
-  color: yellowgreen;
+  color: var(--text-color);
   font-size: 30px;
 }

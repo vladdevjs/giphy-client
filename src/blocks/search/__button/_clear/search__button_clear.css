@@ -1,5 +1,5 @@
 .search__button_clear {
-  background-image: url('../../../../images/clear.svg');
+  background-image: var(--search-clear-background-image);
   background-position: center;
   background-size: 30px;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 }
 
 .search__button_clear:hover {
-  background-image: url('../../../../images/clear-active.svg');
+  background-image: var(--search-clear-active-background-image);
   background-position: center;
   background-size: 35px;
   background-repeat: no-repeat;

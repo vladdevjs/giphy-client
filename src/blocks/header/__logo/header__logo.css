@@ -1,6 +1,5 @@
 .header__logo {
   font-size: 2rem;
-  color: white;
   padding: 0;
   margin: 0 auto;
   display: block;
@@ -10,7 +9,8 @@
 }
 @media screen and (max-width: 767px) {
   .header__logo {
-    max-width: 150px;
+    max-width: 230px;
+    margin-top: 30px;
     height: auto;
   }
 }

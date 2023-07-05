@@ -1,0 +1,29 @@
+:root {
+  --background-color: #282c34;
+  --text-color: yellowgreen;
+  --button-background-color: rgba(255, 255, 255, 0.1);
+  --search-clear-background-image: url('../images/clear.svg');
+  --search-clear-active-background-image: url('../images/clear-active.svg');
+  --search-background-image: url('../images/search.svg');
+  --search-active-background-image: url('../images/search-active.svg');
+  --button-color: rgba(255, 255, 255, 0.8);
+  --toggler-color: rgba(146, 146, 146, 0.8);
+  --toggler-text-color: rgba(255, 255, 255, 0.8);
+}
+
+.light-theme {
+  --background-color: #f5f5f5;
+  --text-color: #000;
+  --search-clear-background-image: url('../images/clear-active.svg');
+  --search-clear-active-background-image: url('../images/clear.svg');
+  --search-background-image: url('../images/search-active.svg');
+  --search-active-background-image: url('../images/search.svg');
+  --button-background-color: #d6d6d6;
+  --button-color: #4d4d4d;
+  --toggler-color: rgb(236, 236, 236);
+  --toggler-text-color: #fff;
+}
+
+.light-theme #root {
+  background-color: var(--background-color);
+}
