@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { ClipLoader } from 'react-spinners';
 
 function Card({ card, openPopup }) {
   const [isLoading, setIsLoading] = useState(true);
 
-  const onLoading = () => {
+  const onLoading = useCallback(() => {
     setIsLoading(false);
-  };
+  }, []);
 
   return (
     <div className='card'>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Route, Routes, Navigate, useNavigate } from 'react-router-dom';
 import Header from './Header';
 import Navbar from './Navbar';
@@ -24,20 +24,21 @@ function App() {
     setCards([]);
   }, [navigate]);
 
-  const handleRandomRefresh = () => {
+  const handleRandomRefresh = useCallback(() => {
     setRandomTrigger((prev) => prev + 1);
-  };
+  }, []);
 
-  const closePopup = () => {
+  const closePopup = useCallback(() => {
     setIsPopupOpen(false);
     setTimeout(() => {
       setCard(null);
     }, 500);
-  };
-  const openPopup = (card) => {
+  }, []);
+
+  const openPopup = useCallback((card) => {
     setCard(card);
     setIsPopupOpen(true);
-  };
+  }, []);
 
   return (
     <div className={`page${lightTheme ? ' light-theme' : ''}`}>
