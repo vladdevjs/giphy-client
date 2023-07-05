@@ -1,9 +1,5 @@
 # Сервис Giphy
 
-Ссылка на сервис: [https://dancing-marzipan-698384.netlify.app](https://dancing-marzipan-698384.netlify.app)
-
-# Mesto
-
 [![Status - проект завершен](https://img.shields.io/badge/Status-проект_завершен-2ea44f)](https://)
 
 ## 📰 Описание проекта:
