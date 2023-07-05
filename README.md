@@ -1,31 +1,31 @@
-# Сервис Giphy
+# Giphy Service
 
-[![Status - проект завершен](https://img.shields.io/badge/Status-проект_завершен-2ea44f)](https://)
+[![Status - project completed](https://img.shields.io/badge/Status-project_completed-2ea44f)](https://)
 
-## 📰 Описание проекта:
+## 📰 Project Description:
 
-**Задача:** Разработать одностраничное приложение с функциями поиска GIF-изображений, отображения популярных изображений и случайного изображения.
+**Objective:** Develop a single-page application with features for searching GIF images, displaying popular images, and showing a random image.
 
-Добавлена расширенная функциональность:
+Added extended functionality:
 
-- переключение темной и светлой темы
-- добавление изображения в Избранное (localStorage)
-- попап с кнопкой для копирования ссылки на изображение
+- Dark and light theme toggle
+- Adding images to Favorites (localStorage)
+- Popup with a button to copy the image link
 
 ![](./assets/giphy.gif)
 
-## 💻 Используемые технологии:
+## 💻 Technologies Used:
 
 - HTML 5 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="16" height="16"/>
 - CSS 3 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="16" height="16"/>
 - React <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="javascript" width="16" height="16"/>
 
-## 🔃 Запуск проекта
+## 🔃 Project Setup
 
-- Склонировать проект на ваш компьютер с Github с помощью команды: `https://github.com/vladdevjs/giphy-client`
-- Установить зависимости: `npm install`
-- Запустить проект: `npm start`
+- Clone the project to your computer from GitHub using the command: `https://github.com/vladdevjs/giphy-client`
+- Install dependencies: `npm install`
+- Run the project: `npm start`
 
-## 🔗 Ссылка
+## 🔗 Link
 
-[Демо на Netlify](https://dancing-marzipan-698384.netlify.app)
+[Demo on Netlify](https://dancing-marzipan-698384.netlify.app)
