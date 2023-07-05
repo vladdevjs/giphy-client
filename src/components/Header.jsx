@@ -1,4 +1,3 @@
-import Logo from './Logo';
 import LogoDark from './LogoDark';
 import LogoLight from './LogoLight';
 
