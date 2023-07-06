@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import usePopupOverlay from '../hooks/usePopupOverlay';
+import useEscapeKey from '../hooks/useEscapeKey';
 
 function Popup({ isOpen, card, onClose, setCard }) {
   const [isCopied, setIsCopied] = useState(false);
@@ -33,6 +35,9 @@ function Popup({ isOpen, card, onClose, setCard }) {
       setCard(updatedCard);
     }
   };
+
+  usePopupOverlay(isOpen, onClose);
+  useEscapeKey(onClose);
 
   return (
     <div className={`popup ${isOpen ? 'popup_opened' : ''}`}>
