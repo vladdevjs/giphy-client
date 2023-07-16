@@ -2,6 +2,8 @@
 
 [![Status - project completed](https://img.shields.io/badge/Status-project_completed-2ea44f)](https://)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/89d14e19-8170-412b-b30b-a70695af8602/deploy-status)](https://app.netlify.com/sites/gifki/deploys)
+
 ## 📰 Project Description:
 
 **Objective:** Develop a single-page application with features for searching GIF images, displaying popular images, and showing a random image.
