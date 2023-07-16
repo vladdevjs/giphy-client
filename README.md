@@ -28,4 +28,4 @@ Added extended functionality:
 
 ## 🔗 Link
 
-[Demo on Netlify](https://dancing-marzipan-698384.netlify.app)
+[Demo on Netlify](https://gifki.netlify.app)
